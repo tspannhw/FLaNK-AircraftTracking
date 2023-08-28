@@ -33,6 +33,9 @@ This is your local IP and is linked off your flightaware page
 
 * http://192.168.1.161:8080/
 
+#### OpenSky REST API
+
+https://openskynetwork.github.io/opensky-api/rest.html
 
 #### Important Fields
 
@@ -65,6 +68,8 @@ Reads JSON data from ADSB REST endpoint -> http://localhost:8080/data/aircraft.j
 #### Articles
 
 * https://medium.com/@tspann/tracking-aircraft-in-real-time-with-open-source-554124125011
+* https://community.cloudera.com/t5/Community-Articles/Ingesting-Flight-Data-ADS-B-USB-Receiver-with-Apache-NiFi-1/ta-p/247940
+* 
 
 
 #### Flink SQL Queries
@@ -98,9 +103,6 @@ select * from `sr1`.`default_database`.`adsb`
 
 
 
-
-
-
 ````
 
 #### Other Source Code Options including Apache Pulsar
@@ -109,6 +111,10 @@ select * from `sr1`.`default_database`.`adsb`
 Function Source: https://github.com/tspannhw/pulsar-adsb-function
 
 Analytics Source: https://github.com/tspannhw/FLiP-Py-ADS-B
+
+OpenSky REST NiFi:  https://github.com/tspannhw/FLaNK-ADSB
+
+
 
 
 #### Videos
