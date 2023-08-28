@@ -39,13 +39,21 @@ https://flightaware.com/adsb/stats/user/TimothySpann
 
 Schema:   https://github.com/tspannhw/pulsar-adsb-function/blob/main/aircraft.schema
 
+
 #### Managing MiNiFI Agent on ADSB Device
 
 Link:   http://nifi1:10090/efm/ui/
 
+https://medium.com/cloudera-inc/using-apache-nifi-to-backup-and-restore-minifi-flows-from-cloudera-efm-87f303b56ebd
+
+https://medium.com/cloudera-inc/edge-managing-c-and-java-agents-d6590c963e9c
+
+
+
 #### MiNiFi Agent Flow
 
 Reads JSON data from ADSB REST endpoint -> http://localhost:8080/data/aircraft.json?_=${random()}
+
 
 #### Articles
 
