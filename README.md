@@ -88,6 +88,19 @@ from aircraft
 group by flight, hex;
 
 
+select icao24, callsign, firstSeen, lastSeen, estDepartureAirport, estArrivalAirport, arrivalAirportCandidatesCount,
+      estDepartureAirportHorizDistance, estDepartureAirportVertDistance, estArrivalAirportHorizDistance, 
+      estArrivalAirportVertDistance, departureAirportCandidatesCount
+from openskyairport
+
+
+select * from `sr1`.`default_database`.`adsb`
+
+
+
+
+
+
 ````
 
 #### Other Source Code Options including Apache Pulsar
