@@ -44,6 +44,7 @@ Schema:   https://github.com/tspannhw/pulsar-adsb-function/blob/main/aircraft.sc
 
 Link:   http://nifi1:10090/efm/ui/
 
+
 https://medium.com/cloudera-inc/using-apache-nifi-to-backup-and-restore-minifi-flows-from-cloudera-efm-87f303b56ebd
 
 https://medium.com/cloudera-inc/edge-managing-c-and-java-agents-d6590c963e9c
@@ -62,6 +63,7 @@ Reads JSON data from ADSB REST endpoint -> http://localhost:8080/data/aircraft.j
 
 #### Other Source Code Options including Apache Pulsar
 
+
 Function Source: https://github.com/tspannhw/pulsar-adsb-function
 
 Analytics Source: https://github.com/tspannhw/FLiP-Py-ADS-B
@@ -69,5 +71,5 @@ Analytics Source: https://github.com/tspannhw/FLiP-Py-ADS-B
 
 #### Videos
 
-* https://www.youtube.com/watch?v=0LMOglFN8ZA&embeds_widget_referrer=https%3A%2F%2Fmedium.com%2Fp%2F554124125011&embeds_referring_euri=https%3A%2F%2Fcdn.embedly.com%2F&embeds_referring_origin=https%3A%2F%2Fcdn.embedly.com&feature=emb_imp_woyt
-* 
+* https://www.youtube.com/watch?v=0LMOglFN8ZA
+  
