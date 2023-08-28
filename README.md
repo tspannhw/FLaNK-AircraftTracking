@@ -27,6 +27,12 @@ https://flightaware.com/adsb/stats/user/TimothySpann
 
 * setup https://www.flightaware.com/adsb/piaware/build
 
+#### Flightaware Web page
+
+This is your local IP and is linked off your flightaware page
+
+* http://192.168.1.161:8080/
+
 
 #### Important Fields
 
@@ -60,6 +66,29 @@ Reads JSON data from ADSB REST endpoint -> http://localhost:8080/data/aircraft.j
 
 * https://medium.com/@tspann/tracking-aircraft-in-real-time-with-open-source-554124125011
 
+
+#### Flink SQL Queries
+
+````
+
+select alt_baro,
+       gs,
+       alt_geom,
+       baro_rate,
+       mach, 
+       hex, flight, lat, lon
+from aircraft;
+
+select max(alt_baro) as MaxAltitudeFeet, min(alt_baro) as MinAltitudeFeet, avg(alt_baro) as AvgAltitudeFeet,
+       max(alt_geom) as MaxGAltitudeFeet, min(alt_geom) as MinGAltitudeFeet, avg(alt_geom) as AvgGAltitudeFeet,
+       max(gs) as MaxGroundSpeed, min(gs) as MinGroundSpeed, avg(gs) as AvgGroundSpeed, 
+       count(alt_baro) as RowCount, 
+       hex as ICAO, flight as IDENT
+from aircraft 
+group by flight, hex;
+
+
+````
 
 #### Other Source Code Options including Apache Pulsar
 
